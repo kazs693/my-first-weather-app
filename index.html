@@ -5,41 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My first weather app</title>
     <link rel="stylesheet" href="src/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <header></header>
+
   <body>
     <div class="weather-app">
-    <form action="">
-      <input type="search" placeholder="Enter a city" required />
-      <input type="submit" value="Search" />
-    </form>
-    <main>
-      <div>
-        <h1>Sydney</h1>
-        <p>
-          Tuesday 18:10, clear sky
-          <br />
-          Humidity: 88%, Wind: 3.09km/h
-        </p>
-      </div>
-      <div>⛅ 12°C</div>
-      <script src="src/app.js"></script>
-    </main>
+      <header>
+        <form action="" class="search-form">
+          <input
+            type="search"
+            class="search-form-input"
+            placeholder="Enter a city"
+            required
+          />
+          <input type="submit" class="search-form-button" value="Search" />
+        </form>
+      </header>
+      <main>
+        <div>
+          <h1>Sydney</h1>
+          <p>
+            Tuesday 18:10, clear sky
+            <br />
+            Humidity: 88%, Wind: 3.09km/h
+          </p>
+        </div>
+        <div>⛅ 12°C</div>
+        <script src="src/app.js"></script>
+      </main>
+
+      <footer>
+        This project was coded by
+        <a href="https://github.com/kazs693" target="_blank;">Karen Searle</a>,
+        is open-sourced on
+        <a
+          href="https://github.com/kazs693/my-first-weather-app"
+          target="_blank;"
+          >GitHub</a
+        >
+        and hosted on
+        <a href="https://kazs693-weather-app.netlify.app/" target="_blank;"
+          >Netlify</a
+        >
+      </footer>
+    </div>
   </body>
-  <footer>
-    This project was coded by
-    <a href="https://github.com/kazs693" target="_blank;">Karen Searle</a>, is
-    open-sourced on
-    <a href="https://github.com/kazs693/my-first-weather-app" target="_blank;"
-      >GitHub</a
-    >
-    and hosted on
-    <a href="https://kazs693-weather-app.netlify.app/" target="_blank;"
-      >Netlify</a
-    >
-  </footer>
-  </div>
 </html>
