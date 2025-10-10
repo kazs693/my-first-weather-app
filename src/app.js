@@ -17,6 +17,13 @@ function refreshWeather(response) {
 
   let windElement = document.querySelector("#wind");
   windElement.innerHTML = response.data.wind.speed;
+
+  let iconElement = document.querySelector("#weather-icon");
+  iconElement.innerHTML = `<img
+                class="weather-app-emoji"
+                src="${response.data.condition.icon_url}"
+                alt="weather icon"
+              />`;
 }
 
 function formatDate(date) {
