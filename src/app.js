@@ -5,6 +5,9 @@ function refreshWeather(response) {
   let cityElement = document.querySelector("#city");
   cityElement.innerHTML = response.data.city;
 
+  let countryElement = document.querySelector("#country");
+  countryElement.innerHTML = response.data.country;
+
   let dateElement = document.querySelector("#date-time");
   let date = new Date(response.data.time * 1000);
   dateElement.innerHTML = formatDate(date);
@@ -26,6 +29,7 @@ function refreshWeather(response) {
               />`;
 
   getForecast(response.data.city);
+  console.log(response);
 }
 
 function formatDate(date) {
@@ -105,5 +109,4 @@ function displayForecast(response) {
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
-searchCity("Sydney"); //Default city for initial page load
-// displayForecast();
+searchCity("Sydney");
