@@ -17,8 +17,11 @@ a {
 }
 
 body {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/969/original/beachsunset.jpg?1760763033);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #f9f7fe;
-  font-family: Roboto, sans-serif;
+  font-family: "Shantell Sans", cursive;
 }
 
 main {
@@ -34,22 +37,30 @@ footer {
 }
 
 .search-form-input {
-  background: #f9f7fe;
-  width: 80%;
+  background: #4380b6;
+  color: white;
+  width: 76%;
   border: none;
   border-radius: 6px;
   padding: 15px 30px;
-  font-size: 16px;
+  font-size: 20px;
+}
+
+input::placeholder {
+  color: white;
+  opacity: 0.8;
+  font-family: "Shantell Sans", cursive;
 }
 
 .search-form-button {
-  background: #885df1;
+  background: #4380b6;
   color: white;
-  font-size: 16px;
-  padding: 15px 30px;
+  font-size: 20px;
+  padding: 13px 30px;
   margin-left: 5px;
   border-radius: 6px;
   border: none;
+  font-family: "Shantell Sans", cursive;
 }
 
 .weather-app-data {
