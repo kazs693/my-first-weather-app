@@ -29,7 +29,6 @@ function refreshWeather(response) {
               />`;
 
   getForecast(response.data.city);
-  console.log(response);
 }
 
 function formatDate(date) {
